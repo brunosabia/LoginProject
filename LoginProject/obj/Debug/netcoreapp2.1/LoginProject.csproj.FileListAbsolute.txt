@@ -1,0 +1,12 @@
+C:\Users\bruno\source\repos\LoginProject\LoginProject\obj\Debug\netcoreapp2.1\LoginProject.csprojAssemblyReference.cache
+C:\Users\bruno\source\repos\LoginProject\LoginProject\obj\Debug\netcoreapp2.1\LoginProject.AssemblyInfoInputs.cache
+C:\Users\bruno\source\repos\LoginProject\LoginProject\obj\Debug\netcoreapp2.1\LoginProject.AssemblyInfo.cs
+C:\Users\bruno\source\repos\LoginProject\LoginProject\obj\Debug\netcoreapp2.1\LoginProject.csproj.CoreCompileInputs.cache
+C:\Users\bruno\source\repos\LoginProject\LoginProject\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\bruno\source\repos\LoginProject\LoginProject\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\bruno\source\repos\LoginProject\LoginProject\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\bruno\source\repos\LoginProject\LoginProject\bin\Debug\netcoreapp2.1\LoginProject.deps.json
+C:\Users\bruno\source\repos\LoginProject\LoginProject\bin\Debug\netcoreapp2.1\LoginProject.runtimeconfig.json
+C:\Users\bruno\source\repos\LoginProject\LoginProject\bin\Debug\netcoreapp2.1\LoginProject.runtimeconfig.dev.json
+C:\Users\bruno\source\repos\LoginProject\LoginProject\bin\Debug\netcoreapp2.1\LoginProject.dll
+C:\Users\bruno\source\repos\LoginProject\LoginProject\obj\Debug\netcoreapp2.1\LoginProject.genruntimeconfig.cache
