@@ -31,6 +31,7 @@ namespace LoginProject.Services
 
         public async Task AuthenticationAsync(User obj)
         {
+
             bool hasAny = await _context.User.AnyAsync(x => x.Username == obj.Username && x.Password == obj.Password);
             if (!hasAny)
             {
