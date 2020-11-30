@@ -9,11 +9,12 @@ namespace LoginProject.Data
 {
     public class LoginProjectContext : DbContext
     {
+        public DbSet<User> Users { get; set; }
+
         public LoginProjectContext(DbContextOptions<LoginProjectContext> options)
             : base(options)
         {
         }
 
-        public DbSet<User> User { get; set; }
     }
 }

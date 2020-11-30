@@ -19,7 +19,7 @@ namespace LoginProject.Services
 
         public async Task<List<User>> FindAllAsync()
         {
-            return await _context.User.ToListAsync();
+            return await _context.Users.ToListAsync();
         }
 
 
@@ -32,7 +32,7 @@ namespace LoginProject.Services
         public async Task AuthenticationAsync(User obj)
         {
 
-            bool hasAny = await _context.User.AnyAsync(x => x.Username == obj.Username && x.Password == obj.Password);
+            bool hasAny = await _context.Users.AnyAsync(x => x.Username == obj.Username && x.Password == obj.Password);
             if (!hasAny)
             {
                 throw new Exception("Login Failed");

@@ -18,15 +18,16 @@ namespace LoginProject.Data
 
         public void Seed()
         {
-            if (_context.User.Any())
+            if (_context.Users.Any())
             {
                 return;
             }
+            
 
-            User u1 = new User("admin", "admin", Status.Offline);
-            User u2 = new User("admin1", "admin1", Status.Offline);
+            User u1 = new User(1,"admin", "admin", Status.Offline);
+            User u2 = new User(2,"admin1", "admin1", Status.Offline);
 
-            _context.User.AddRange(u1, u2);
+            _context.Users.AddRange(u1, u2);
 
             _context.SaveChanges();
         }

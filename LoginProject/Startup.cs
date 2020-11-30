@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using LoginProject.Services;
+using Microsoft.AspNetCore.Http;
 
 namespace LoginProject
 {
@@ -31,9 +32,15 @@ namespace LoginProject
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
 
 
-            services.AddControllersWithViews();
+
             services.AddDbContext<LoginProjectContext>(options =>
                    options.UseMySql(Configuration.GetConnectionString("LoginProjectContext"), builder =>
                    builder.MigrationsAssembly("LoginProject")));
@@ -45,11 +52,12 @@ namespace LoginProject
 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,SeedingService seedingService)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                seedingService.Seed();
             }
             else
             {
